@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    < title>Love Project</title>
+        < link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box" id="loginBox">
+        <h1>Login</h1>
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+    </div>
+    <div class="box hidden" id="questionBox">
+        <h1>Will you be my boyfriend??</h1>
+        <button onclick="answerYes()">Yes</button>
+        <button onclick="answerNo()">No</button>
+    </div>
+    <div class="box hidden" id="reasonBox">
+        <h1>Why no?</h1>
+        <textarea id="reason" placeholder="Give reason....."></textarea>
+        <button onclick="submitReason()">Submit</button>
+        <script src="script.js"></script>
+</body>
+
+</html>
