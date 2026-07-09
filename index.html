@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    < title>Love Project</title>
-        < link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Login Page -->
     <div class="box" id="loginBox">
         <h1>Login</h1>
+
         <input id="username" type="text" placeholder="Username">
+
         <input id="password" type="password" placeholder="Password">
+
         <button onclick="login()">Login</button>
+
         <p id="message"></p>
     </div>
+
+    <!-- Question Page -->
     <div class="box hidden" id="questionBox">
-        <h1>Will you be my boyfriend??</h1>
+        <h1>Will you be my boyfriend? ❤️</h1>
+
         <button onclick="answerYes()">Yes</button>
+
         <button onclick="answerNo()">No</button>
     </div>
+
+    <!-- Reason Page -->
     <div class="box hidden" id="reasonBox">
         <h1>Why no?</h1>
-        <textarea id="reason" placeholder="Give reason....."></textarea>
+
+        <textarea id="reason" placeholder="Give your reason..."></textarea>
+
+        <br><br>
+
         <button onclick="submitReason()">Submit</button>
-        <script src="script.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
